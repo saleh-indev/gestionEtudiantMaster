@@ -11,9 +11,8 @@ class Releve2Notes:public Etudiant
 private:
 string unitesEnseignees;
 Mention mention;
-double notes,moyduSemestre;
+double notes,moyduSemestre,moyenneGen;
 int coefficients, credits,creditTotsem,creditTot;
-double moyduSemestre, moyenneGen; 
 public:
     Releve2Notes();
     ~Releve2Notes();
@@ -23,6 +22,16 @@ public:
     void setMention(double moyenneGen);
     void saise();
     void affichage();
+    string getUnitesEnseignees();
+    Mention getMention();
+    double getNotes();
+    double getMoyduSemestre();
+    double getMoyenneGen();
+    int getCoefficients();
+    int getCredits();
+    int getCreditTotsem();
+    int getCreditTot();
+
 };
 
 
