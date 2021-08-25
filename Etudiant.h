@@ -1,21 +1,20 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
-class Etudiant
-{
+
+class Etudian{
 private:
-    string nom,prenoms,specialite;
+    std::string nom,prenoms,specialite;
 public:
     Etudiant();
     ~Etudiant();
     Etudiant(const Etudiant& other);
-    string getNom();
-    string getPrenoms();
-    string getSpecialite();
-    void setSpecialite(string spe);
-    void setNom(string nom);
-    void setPrenoms(string prenoms);
+    std::string getNom();
+    std::string getPrenoms();
+    std::string getSpecialite();
+    void setSpecialite(std::string spe);
+    void setNom(std::string nom);
+    void setPrenoms(std::string prenoms);
     void saise();
     void affichage();
 };

@@ -1,17 +1,13 @@
 #include <iostream>
 #include "Etudiant.h"
+using namespace std;
 
-Etudiant::Etudiant(){
-    nom="";
-    prenoms="";
-    specialite="";
-}
+Etudiant::Etudiant(): nom(""),prenoms(""),specialite(""){}
 Etudiant::~Etudiant(){}
 Etudiant::Etudiant(const Etudiant& other){
     nom=other.nom;
     prenoms=other.prenoms;
     specialite=other.specialite;
-
 }
 string Etudiant::getNom(){
     return this->nom;
@@ -37,5 +33,5 @@ void Etudiant::saise(){
     cout<<"Specialite :"<<this->specialite<<endl;
 }
 void Etudiant::affichage(){
-
+//affichage d'informations 
 }
