@@ -10,6 +10,8 @@ private:
     std::vector<int> credits;
     int creditTotSem,creditTot;
     std::string mention;
+    int nombreModule; //supplementaire 
+    
 
 public:
     Releve2Notes();

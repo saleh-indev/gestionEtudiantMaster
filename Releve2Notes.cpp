@@ -11,13 +11,25 @@ Releve2Notes::Releve2Notes():Etudiant(){
 
 Releve2Notes::~Releve2Notes(){}
 double Releve2Notes::calculMoyduSemestre(double nts[], int coefs[]){
-    
+
 }
 void Releve2Notes::setMoyenneGen();
 void Releve2Notes::setCreditTotal(double notes[], int credits[]);
-void Releve2Notes::setMention(double moyenneGen);
-void Releve2Notes::saise();
-void Releve2Notes::affichage();
+void Releve2Notes::setMention(double moyenneGen){
+    //Ecriture de la  mention en fonction de la moyenneGen
+}
+void Releve2Notes::saise(){
+    //Remplissage de notes
+}
+void Releve2Notes::affichage(){
+    for(int i=0;i<unitesEnseignees.size();i++){
+        cout << "Module : "unitesEnseignees[i]<<endl;
+        cout<<"Note : "<<notes[i]<<endl;
+        cout<<"Coefficient : "<<coefficients[i]<<endl;
+    }
+    cout<<"Credit semestre 1: "<<creditTotSem;
+    cout<<"Credit semestre 2: "<<creditTot-creditTotSem<<endl;
+}
 
 //Setters 
     void setUnitesEnseignees(vector<string> unitesEnseignees){
@@ -26,13 +38,27 @@ void Releve2Notes::affichage();
     void setNotes(vector<double> notes){
         this.notes = notes;
     }
-    void setMoySemestre(double moyduSemestre);
-    void setMoyenneGen(double moyenneGen);
-    void setCoefficients(vector<int> coefficients);
-    void setCredits(vector<int> credits);
-    void setCreditTot(int creditTot);
-    void setCreditTotSem(int creditTotSem);
-    void setMention(string mention);
+    void setMoySemestre(double moyduSemestre){
+        this.moyduSemestre = moyduSemestre;
+    }
+    void setMoyenneGen(double moyenneGen){
+        this.moyenneGen = moyenneGen;
+    }
+    void setCoefficients(vector<int> coefficients){
+        this.coefficients =coefficients;
+    }
+    void setCredits(vector<int> credits){
+        this.credits = credits;
+    }
+    void setCreditTot(int creditTot){
+        this.creditTot = creditTot;
+    }
+    void setCreditTotSem(int creditTotSem){
+        this.creditTotSem = creditTotSem;
+    }
+    void setMention(string mention){
+        this.mention = mention;
+    }
     //getters
     vector<string> getUnitesEnseignees(){
         return this.unitesEnseignees;
